@@ -1,2 +1,3 @@
-public class Trabajador {
+public interface Trabajador {
+    void realizarTarea();
 }
