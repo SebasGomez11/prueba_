@@ -1,3 +1,4 @@
 public class Estudiante extends Persona {
-    // Clase vacía inicialmente
+    // Propiedad adicional para el grado del estudiante
+    private String grado;
 }
