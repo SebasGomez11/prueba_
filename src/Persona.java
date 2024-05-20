@@ -32,4 +32,10 @@ public class Persona {
     public String obtenerFechaNacimiento() {
         return fechaNacimiento;
     }
+
+    // Método adicional para calcular la fecha de nacimiento a partir de la edad
+    public void calcularFechaNacimiento() {
+        int yearOfBirth = java.time.Year.now().getValue() - edad;
+        this.fechaNacimiento = yearOfBirth + "-01-01";  // Suponiendo que la fecha de nacimiento es el 1 de enero
+    }
 }
