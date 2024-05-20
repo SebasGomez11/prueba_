@@ -21,22 +21,13 @@ public class FiguraGeometrica {
 
     }
 
-    // En la clase Rectangulo
-    public void establecerLongitud(double longitud) {
-        this.longitud = longitud;
-    }
-
-    public double obtenerLongitud() {
-        return longitud;
-    }
-
     // En la clase Circulo
-    public void establecerRadio(double radio) {
-        this.radio = radio;
+    public double calcularArea() {
+        return Math.PI * Math.pow(radio, 2);
     }
 
-    public double obtenerRadio() {
-        return radio;
+    public double calcularPerimetro() {
+        return 2 * Math.PI * radio;
     }
 
 }
