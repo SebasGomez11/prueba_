@@ -14,7 +14,11 @@ public class Persona {
     }
 
     public void establecerEdad(int edad) {
-        this.edad = edad;
+        if (edad >= 0) {
+            this.edad = edad;
+        } else {
+            throw new IllegalArgumentException("La edad no puede ser negativa");
+        }
     }
 
     public int obtenerEdad() {
